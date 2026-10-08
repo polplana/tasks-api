@@ -1,8 +1,27 @@
 {
-  "name": "node-express-project",
+  "name": "tasks-api",
   "version": "1.0.0",
-  "private": true,
+  "description": "API REST de tareas con Node.js, Express y MySQL",
   "type": "module",
-  "scripts": { "start": "node --watch src/app.js" },
-  "dependencies": { "express": "^5.1.0", "mysql2": "^3.14.0" }
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polplana/tasks-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polplana/tasks-api/issues"
+  },
+  "homepage": "https://github.com/polplana/tasks-api#readme",
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.5"
+  }
 }
